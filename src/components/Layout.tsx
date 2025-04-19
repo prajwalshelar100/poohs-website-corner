@@ -1,4 +1,4 @@
-
+import { Analytics } from "@vercel/analytics/react"
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Home, Book, Heart, Calendar, PenTool, Mail } from 'lucide-react';
@@ -59,6 +59,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       {/* Main Content */}
       <main className="flex-1">
         {children}
+        <Analytics />
       </main>
 
       {/* Mobile Navigation */}
